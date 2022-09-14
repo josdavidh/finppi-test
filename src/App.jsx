@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
-// paginas de la aplicacion
+// Paginas de la aplicacion
 import { HomePage } from "./pages/homePage/index.jsx";
 import { LoginPage } from "./pages/loginPage/index.jsx";
 import { CompanyPage } from "./pages/companyPage/index.jsx";
@@ -11,12 +11,15 @@ import { ClientsPage } from "./pages/clientsPage/index.jsx";
 import { ExpensesPage } from "./pages/expensesPage/index.jsx";
 import { IncomesPage } from "./pages/incomesPage/index.jsx";
 
-//componentes necesarios
+// Componentes necesarios
 import { NavBar } from "./components/navBar/index.jsx";
+
+// Tema de la pagina
+import { AppTheme } from "./theme/AppTheme";
 
 export const App = () => {
   return (
-    <>
+    <AppTheme>
       <NavBar />
 
       <Routes>
@@ -30,6 +33,6 @@ export const App = () => {
         <Route path="ingresos" element={<IncomesPage />} />
       </Routes>
       
-    </>
+    </AppTheme>
   );
 };

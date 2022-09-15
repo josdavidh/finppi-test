@@ -1,6 +1,6 @@
 import { Link as RouterLink } from "react-router-dom";
 import { Button, Grid, Link, TextField } from "@mui/material";
-import { AuthLayout } from "../../Layout/authLayout";
+import { AuthLayout } from "../../Layout/AuthLayout.jsx";
 
 export const LoginPage = () => {
   return (
